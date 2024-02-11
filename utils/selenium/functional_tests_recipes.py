@@ -26,14 +26,14 @@ if __name__ == '__main__':
 
     browser = make_chrome_browser()
     # usuario entra no site
-    browser.get('https://www.youtube.com/') #http://127.0.0.1:8000/
+    browser.get('http://127.0.0.1:8000/')
 
     # seleciona input de pesquisa
-    search_input = browser.find_element(By.XPATH,'//input[@name="search_query"]')
+    search_input = browser.find_element(By.XPATH,'//input[@name="q"]')
     sleep(5)
     # clica no input e pesquisa algo
     search_input.click()
-    search_input.send_keys('receita de bolo')
+    search_input.send_keys('mais uma receita')
     # clica em enter
     search_input.send_keys(Keys.ENTER)
     sleep(5)
