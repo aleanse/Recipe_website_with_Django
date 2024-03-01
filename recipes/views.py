@@ -6,6 +6,8 @@ from django.contrib import messages
 import os
 from utils.recipes.pagination import make_pagination
 from django.views.generic import DetailView, ListView
+from django.http import JsonResponse
+from django.forms.models import model_to_dict
 
 PER_PAGE = int(os.environ.get('PER_PAGE', 6))
 
@@ -31,6 +33,15 @@ class RecipeListViewBase(ListView):
 
 class RecipeListViewHome(RecipeListViewBase):
     template_name = 'recipes/pages/home.html'
+
+
+
+class RecipeListViewHomeApi(RecipeListViewBase):
+    template_name = 'recipes/pages/home.html'
+
+    def render_to_response(self, context, **response_kwargs):
+        recipes = self.get_context_data()['recipes'].object_list.values()
+        return JsonResponse(list(recipes), safe=False)
 
 
 class RecipeListViewCategory(RecipeListViewBase):
@@ -118,6 +129,19 @@ class RecipeDetail(DetailView):
         })
 
         return ctx
+
+class RecipeDetailApi(RecipeDetail):
+
+    def render_to_response(self, context, **response_kwargs):
+        recipe = self.get_context_data()['recipe']
+        recipe_dict = model_to_dict(recipe)
+
+        if recipe_dict.get('cover'):
+            recipe_dict['cover'] = recipe_dict['cover'].url
+        else:
+            recipe_dict['cover'] = ''
+
+        return JsonResponse(recipe_dict,safe=False,)
 def recipe(request,id):
     recipe = get_object_or_404(Recipe,id=id, is_published=True,)
 
