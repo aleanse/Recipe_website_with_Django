@@ -1,13 +1,13 @@
 from django.db.models import Q
-from django.shortcuts import render, get_object_or_404, get_list_or_404
-from django.http.response import HttpResponse, Http404
-from recipes.models import Recipe, User, Category
-from django.contrib import messages
+from django.shortcuts import render, get_object_or_404
+from django.http.response import Http404
+from recipes.models import Recipe
 import os
 from utils.recipes.pagination import make_pagination
 from django.views.generic import DetailView, ListView
 from django.http import JsonResponse
 from django.forms.models import model_to_dict
+from utils.recipes.factory import make_recipe
 
 PER_PAGE = int(os.environ.get('PER_PAGE', 6))
 
@@ -97,9 +97,10 @@ class RecipeListViewSearch(RecipeListViewBase):
 
 def home(request):
     recipes = Recipe.objects.filter(is_published=True,).order_by('-id')
+    #recipes = [make_recipe() for _ in range(10)],
+
 
     page_obj, pagination_range = make_pagination(request, recipes, PER_PAGE)
-
 
 
     return render(request,'recipes/pages/home.html',context={'recipes':page_obj, 'pagination_range': pagination_range})

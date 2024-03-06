@@ -473,9 +473,7 @@ a {
 .menu-hidden {
   left: -255px;
 }
-.hidden-text {
-  display: none;
-}
+
 .button-show-menu {
   position: fixed;
   left: 265px;
