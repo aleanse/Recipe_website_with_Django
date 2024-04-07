@@ -42,12 +42,11 @@ class DashboardRecipe(View):
             recipe.is_published = False
             recipe.save()
 
-            messages.success(request, 'Sua receita foi salva com sucesso!')
+            messages.success(request, 'Your recipe has been saved  with sucessfully !')
 
             return redirect(reverse('authors:dashboard_recipe_edit', args=( recipe.id,)))
 
         return self.render_recipe(form)
-    
 
 @method_decorator(
     login_required(login_url='authors:login', redirect_field_name='next'),
