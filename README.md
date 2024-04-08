@@ -7,33 +7,37 @@ Siga os passos abaixo para configurar e rodar o projeto localmente:
 1. Clone este repositório:
 
     ```
-    git clone https://github.com/seu-usuario/SeuProjeto.git
+    git clone https://https://github.com/aleanse/Recipe_website_with_Django.git
     ```
 
 2. Navegue até o diretório do projeto:
 
     ```
-    cd SeuProjeto
+    cd Recipe_website_with_Django
     ```
 
-3. Instale as dependências do backend:
+3. crie um ambiente virtual:
 
     ```
-    cd backend
-    npm install
+    python -m venv venv
     ```
-
-4. Instale as dependências do frontend:
+4. entre no  ambiente virtual:
 
     ```
-    cd ../frontend
-    npm install
+    .\venv\Scripts\Activate.ps1 
+    ```    
+
+4. Instale as dependências do projeto:
+
+    ```
+    pip install -r requirements.txt
     ```
 
-5. Inicie o servidor backend:
+5. Inicie o servidor:
 
     ```
-    npm start
+    python manage.py runserver
+    ```
 # Layout
 ## feed de receitas
 ![feed](assets/feed.png)
