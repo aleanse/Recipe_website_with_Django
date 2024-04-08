@@ -10,7 +10,6 @@ from utils.recipes.factory import make_recipe
 
 PER_PAGE = int(os.environ.get('PER_PAGE', 6))
 
-print('OLAg')
 
 def search(request):
     search_term = request.GET.get("q",'').strip()
