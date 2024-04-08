@@ -1,5 +1,39 @@
 # Sobre o projeto
 uma aplicação web onde os usuários podem criar uma conta, fazer login e compartilhar suas receitas favoritas. As receitas só aparecem no feed público após a aprovação do administrador do site. Os usuários podem editar e excluir suas receitas antes que elas sejam publicadas, mas uma vez no feed público, as receitas não podem ser editadas. Além disso, o site conta com um sistema de paginação e uma barra de pesquisa completamente funcional para facilitar a navegação e encontrar receitas específicas.
+## Instalação e Uso
+
+Siga os passos abaixo para configurar e rodar o projeto localmente:
+
+1. Clone este repositório:
+
+    ```
+    git clone https://github.com/seu-usuario/SeuProjeto.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```
+    cd SeuProjeto
+    ```
+
+3. Instale as dependências do backend:
+
+    ```
+    cd backend
+    npm install
+    ```
+
+4. Instale as dependências do frontend:
+
+    ```
+    cd ../frontend
+    npm install
+    ```
+
+5. Inicie o servidor backend:
+
+    ```
+    npm start
 # Layout
 ## feed de receitas
 ![feed](assets/feed.png)
