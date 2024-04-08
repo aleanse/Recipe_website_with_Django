@@ -5,5 +5,7 @@ uma aplicação web onde os usuários podem criar uma conta, fazer login e compa
 ![feed](assets/feed.png)
 ## criar uma receita
 ![feed](assets/create_recipe.png)
+## django admin
+![feed](assets/admin.png)
 
 
