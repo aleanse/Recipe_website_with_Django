@@ -1,8 +1,5 @@
 # Sobre o projeto
-Um site para publicação de receitas com um CRUD completo, nele a pessoa pode criar uma conta e fazer login,apos isso fazer a publicação de receitas adicionando foto titulo, descrição entre outros
-porem o diferencial é que quando a pessoa criar uma receita ela não é publicada no feed instantaneamente, apenas quando o administrador do site atraves do Django admin, autorizar a publicação que a receita irá para o feed,
-enquando a receita não for publicada a pessoa pode editar e excluir a receita, depois que o admin permitir a publicação não é mais permitido fazer alterações,possui tambem um sistema de paginação e tambem um sistema de pesquisa de
-receitas completamente funcional.
+uma aplicação web onde os usuários podem criar uma conta, fazer login e compartilhar suas receitas favoritas. As receitas só aparecem no feed público após a aprovação do administrador do site. Os usuários podem editar e excluir suas receitas antes que elas sejam publicadas, mas uma vez no feed público, as receitas não podem ser editadas. Além disso, o site conta com um sistema de paginação e uma barra de pesquisa completamente funcional para facilitar a navegação e encontrar receitas específicas.
 # Layout
 ![feed](assets/feed.png)
 
