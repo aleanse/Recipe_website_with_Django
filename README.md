@@ -1,43 +1,6 @@
 # Sobre o projeto
 uma aplicação web onde os usuários podem criar uma conta, fazer login e compartilhar suas receitas favoritas. As receitas só aparecem no feed público após a aprovação do administrador do site. Os usuários podem editar e excluir suas receitas antes que elas sejam publicadas, mas uma vez no feed público, as receitas não podem ser editadas. Além disso, o site conta com um sistema de paginação e uma barra de pesquisa completamente funcional para facilitar a navegação e encontrar receitas específicas.
-## Instalação e Uso
 
-Siga os passos abaixo para configurar e rodar o projeto localmente:
-
-1. Clone este repositório:
-
-    ```
-    git clone https://https://github.com/aleanse/Recipe_website_with_Django.git
-    ```
-
-2. Navegue até o diretório do projeto:
-
-    ```
-    cd Recipe_website_with_Django
-    ```
-
-3. crie um ambiente virtual:
-
-    ```
-    python -m venv venv
-    ```
-4. entre no  ambiente virtual:
-
-    ```
-    .\venv\Scripts\Activate.ps1 
-    ```    
-
-4. Instale as dependências do projeto:
-
-    ```
-    pip install -r requirements.txt
-    ```
-
-5. Inicie o servidor:
-
-    ```
-    python manage.py runserver
-    ```
 # Layout
 ## feed de receitas
 ![feed](assets/feed.png)
