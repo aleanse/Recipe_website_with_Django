@@ -18,7 +18,7 @@ uma aplicação web onde os usuários podem criar uma conta, fazer login e compa
 - **Barra de Pesquisa:** Permite aos usuários pesquisar receitas por título, ingrediente, ou qualquer outro critério relevante.  
 - **Validações de Formulário:** Várias validações de formulário estão implementadas para garantir dados corretos e completos.  
 - **Mensagens de Sucesso e Erro:** Feedback claro e informativo é fornecido aos usuários durante o uso do site.
-- ## Tecnologia utilizadas
+- ## Tecnologias utilizadas
 
 - **Frontend:** HTML,CSS,Javascript,Django templates
 - **Backend:** Python,Django Framework
