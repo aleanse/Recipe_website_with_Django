@@ -30,8 +30,6 @@ def create_register(request):
         messages.success(request,'Your user is created, please log in')
         del (request.session['register_form_data'])
         return redirect('authors:login')
-
-
     return redirect('authors:register')
 
 def login_view(request):
