@@ -70,7 +70,7 @@ h6 {
 .container {
     max-width: 144rem;
     margin: 0 auto;
-    padding: var(--spacing-gutter-medium);
+    padding: var(--spacing-gutter-large);
 }
 .main-content-container{
     min-height:70vh;
