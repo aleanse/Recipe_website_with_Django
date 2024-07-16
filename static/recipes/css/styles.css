@@ -39,7 +39,7 @@
             --font-headings: 'Roboto Slab', serif;
 
             --spacing-gutter-medium: 3rem;
-            --spacing-gutter-large: 4rem;
+            --spacing-gutter-large: 10rem;
         }
 
         * {
@@ -70,7 +70,7 @@
         .container {
             max-width: 144rem;
             margin: 0 auto;
-            padding: var(--spacing-gutter-medium);
+            padding: var(--spacing-gutter-large);
         }
 
         .main-header-container {
