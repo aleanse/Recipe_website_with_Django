@@ -24,6 +24,8 @@ def search(request):
                                                           'additional_url_query': f'&q={search_term}',})
 def home(request):
     recipes = Recipe.objects.filter(is_published=True,).order_by('-id')
+
+    print(Recipe.objects.all())
     
 
     page_obj, pagination_range = make_pagination(request, recipes, PER_PAGE)

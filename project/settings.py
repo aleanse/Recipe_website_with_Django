@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'INSECURE')
+SECRET_KEY = os.getenv('SECRET_KEY', 'INSECURE')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -81,14 +81,16 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default':{
-        'ENGINE': os.environ.get('DATABASE_ENGINE'),
-        'NAME': os.environ.get('DATABASE_NAME'),
-        'USER': os.environ.get('DATABASE_USER'),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
-        'HOST': os.environ.get('DATABASE_HOST'),
-        'PORT': os.environ.get('DATABASE_PORT')
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':  'recipes',
+        'USER': 'root',
+        'PASSWORD': 'Mateus@2022',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
+print(DATABASES)
 
 
 # Password validation
