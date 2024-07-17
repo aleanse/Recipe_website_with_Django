@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default':{
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'recipes',
+        'NAME':  'railway',
         'USER': 'root',
-        'PASSWORD': 'Mateus@2022',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': 'eIJbbXZOsRsapjqDqPnLYIBFzulChxTG',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '19020',
     }
 }
 
