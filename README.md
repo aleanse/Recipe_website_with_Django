@@ -1,5 +1,6 @@
 # Sobre o projeto
 uma aplicação web onde os usuários podem criar uma conta, fazer login e compartilhar suas receitas favoritas. As receitas só aparecem no feed público após a aprovação do administrador do site. Os usuários podem editar e excluir suas receitas antes que elas sejam publicadas, mas uma vez no feed público, as receitas não podem ser editadas. Além disso, o site conta com um sistema de paginação e uma barra de pesquisa completamente funcional para facilitar a navegação e encontrar receitas específicas.
+
 # Layout
 ## feed de receitas
 ![feed](assets/feed.png)
@@ -17,7 +18,7 @@ uma aplicação web onde os usuários podem criar uma conta, fazer login e compa
 - **Barra de Pesquisa:** Permite aos usuários pesquisar receitas por título, ingrediente, ou qualquer outro critério relevante.  
 - **Validações de Formulário:** Várias validações de formulário estão implementadas para garantir dados corretos e completos.  
 - **Mensagens de Sucesso e Erro:** Feedback claro e informativo é fornecido aos usuários durante o uso do site.
-- ## Tecnologia utilizadas
+- ## Tecnologias utilizadas
 
 - **Frontend:** HTML,CSS,Javascript,Django templates
 - **Backend:** Python,Django Framework
