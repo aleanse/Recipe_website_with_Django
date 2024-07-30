@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'INSECURE')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["ep-quiet-dust-a4isja2n-pooler.us-east-1.aws.neon.tech"]
+ALLOWED_HOSTS = [".vercel.app"]
 
 
 # Application definition
